@@ -30,9 +30,9 @@ public class rta {
 	    	{
 	    		for(k=N-1,m=0;k>m;k--,m++)
 	    		{
-	    			c=arr[j][m];
-	    			arr[j][m]=arr[j][k];
-	    			arr[j][k]=c;
+	    			c=arr[m][j];
+	    			arr[m][j]=arr[k][j];
+	    			arr[k][j]=c;
 	    		}
 	    	}
 	    	
@@ -40,8 +40,9 @@ public class rta {
 	    	{
 	    		for(k=0;k<N;k++)
 	    		{
-	    			System.out.println(arr[j][k]+" ");;
+	    			System.out.print(arr[j][k]+" ");;
 	    		}
+	    		System.out.println();
 	    	}
 	    	
 	    }
